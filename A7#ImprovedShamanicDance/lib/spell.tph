@@ -1,6 +1,7 @@
 // *** Installs spell "Shamanic Pact" ***
 
 INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/ClassSpellTool.TPA~
 
 // Custom portrait icon
 COPY ~%MOD_FOLDER%/spells/a7#sh61d.bam~ ~override~
@@ -47,6 +48,7 @@ COPY ~%MOD_FOLDER%/spells/a7#sh61a.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7#sh61x.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7#sh61y.spl~ ~override~
 
+LAF ADD_CLASS_SPELL STR_VAR resref=~a7#sh61~ class_include=~{'SHAMAN'}~ END
 
 // Weapon for spirits
 COPY ~%MOD_FOLDER%/spells/a7#sh61w.spl~ ~override~
